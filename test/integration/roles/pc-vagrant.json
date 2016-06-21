@@ -1,0 +1,12 @@
+{
+  "name": "pc-vagrant",
+  "description": "Manage HPdesktop Vagrant config",
+  "default_attributes": {
+    "vagrant": {
+      "version": "1.8.1"
+    }
+  },
+  "run_list": [
+    "recipe[pc_vagrant::default]"
+  ]
+}

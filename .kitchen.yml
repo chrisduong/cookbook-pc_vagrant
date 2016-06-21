@@ -1,0 +1,22 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+# Uncomment the following verifier to leverage Inspec instead of Busser (the
+# default verifier)
+# verifier:
+#   name: inspec
+
+platforms:
+  - name: ubuntu-16.04
+  # TODO: build bento box for macos-10.10
+  # - name: macos-10.10
+
+suites:
+  - name: default
+    run_list:
+      - recipe[pc_vagrant::default]
+    attributes:

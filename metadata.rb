@@ -1,0 +1,11 @@
+name 'pc_vagrant'
+maintainer 'cduong13'
+maintainer_email 'chris.duong83@gmail.com'
+license 'mit'
+description 'Installs/Configures pc_vagrant'
+long_description 'Installs/Configures pc_vagrant'
+version '0.1.2'
+
+depends 'vagrant', '~> 0.0'
+depends 'sysctl'
+depends 'tmux', '~> 1.0'
